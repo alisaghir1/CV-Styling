@@ -1,0 +1,261 @@
+html,body{
+    margin: 0;
+    padding 0;
+}
+header{
+    background-color: gray;
+    position: relative;
+    width: 100%;
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 150px;
+    width:50%
+}
+header hgroup{
+    color: red;
+}
+header img{
+    margin-left: 100xpx;
+}
+#contact{
+  display: flex;
+  position: absolute;
+  top: 7px;
+  right: 0px;
+  margin: 0;
+  line-height:1.9;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+#contact h3{
+    display: none;
+}
+.contact{
+    align-items: baseline;
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    width: 900px;
+}
+.contact-type{
+    background-color: red;
+    color: white;
+    margin: 0;
+    width: 15%;
+}
+.contact-value{
+    background-color: black;
+    color: red;
+    margin: 0;
+    width:85%
+}
+.contact-value a{
+    text-decoration: none;
+    color: red;
+}
+.content{
+    display:grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    padding: 50px 200px;   
+}
+.contact-skype .contact-value{
+    color: transparent;
+}
+#hobbies{
+    padding-top: 40px;
+}
+
+#about h3, #competencies h3{
+    border-bottom: 1px solid gray;
+}
+h3::before{
+content: "";
+background-color: red;
+display: inline-block;
+width: 20px;
+height: 20px;
+border-radius: 100%;
+margin-right: 10px;
+}
+#education h3, #experiences h3{
+    border-bottom: 1px solid gray;
+}
+p{
+    padding-right: 15px;
+}
+.experience-type, .experience-institution{
+    color:red;
+}
+.skill{
+    background-color: gray;
+    line-height: 2;
+    margin-bottom: 4px;
+    padding: 3px;
+}
+.skills-primary::before{
+    content: "Main";
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 0px;
+}
+.skills-secondary::before{
+    content: "Other";
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.skill[data-skill="5"] span{
+    background-color: red;
+    width: 50%;
+    display: inline-block;
+    color: white;
+}
+.skill[data-skill="3"] span{
+    background-color: red;
+    width: 30%;
+    display: inline-block;
+    color: white;
+}
+.skill[data-skill="1"] span{
+    background-color: red;
+    width: 20%;
+    display: inline-block;
+    color: white;
+}
+.skill[data-skill="9"] span{
+    background-color: red;
+    width: 95%;
+    display: inline-block;
+    color: white;
+}
+.skill[data-skill="7"] span{
+    background-color: red;
+    width: 70%;
+    display: inline-block;
+    color: white;
+}
+.skills-secondary .skill{
+    opacity: 50%;
+}
+#hobbies h3{
+    border-bottom: 1px solid gray;
+}
+.experience-type::after{
+    content: " @";
+    display: inline-block;
+    color: red;
+}
+.experience-institution{
+    font-weight: normal;
+}
+.experience-details{
+    opacity: 50%;
+    padding-left: 10px;
+    padding-top: 0px;
+}
+.experience-details::before{
+    content: "In";
+    display: inline-block;
+}
+.experience-details .experience-location::after{
+    content: "on";
+    display: inline-block;
+}
+.experience-date-separator{
+    color: red;
+    font-weight: bold;
+    opacity: 100%;
+}
+
+@media all and (min-width:1100px){
+header{
+    background-color: gray;
+    padding: 10px 140px;
+}
+header div{
+    display: flex;
+}
+header hgroup{
+    color: red;
+}
+#contact{
+    position: absolute;
+    top: 7px;
+    right: 0;
+    line-height: 1.5;
+    width: 50%;
+
+}
+#contact h3{
+    display: none;
+}
+.contact-value{
+    background-color: black;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 3px;
+
+}
+
+.content{
+    padding:60px 80px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 20px;
+}
+
+}
+/* //////////////////////////////////////////////////// */
+@media all and (max-width:1099px){
+
+    header{
+        background-color: gray;
+        margin-left: 0px;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    hgroup{
+        color: red;
+        flex-direction: column;
+    }
+    hgroup h1{
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .content{
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+#contact{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.contact-value{
+    background-color: white;
+
+}
+.contact-type{
+    padding: 0;
+    margin: 0;
+}
+#contact h3{
+    display: inline-block;
+    border-bottom: 1px solid gray;
+}
+
+}
+
