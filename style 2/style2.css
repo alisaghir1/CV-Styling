@@ -46,7 +46,8 @@ section h3{
     grid-row: 1/ span 2;
     width: 130px;
     margin: 0px;
-    border-right:1px solid black
+    border-right:1px solid black;
+    font-style: italic;
    
     
 }
@@ -155,22 +156,22 @@ display:none;
     align-items: baseline;
 }
 .contact-github a{
-content: url(../CV-Styling/public/images/github.png);
+content: url(../public/images/github.png);
 width: 60px;
 height: 60px;
 }
 .contact-phone a{
-    content: url(../CV-Styling/public/images/phone.png);
+    content: url(../public/images/phone.png);
     width: 60px;
     height: 60px;
 }
 .contact-email a{
-    content: url(../CV-Styling/public/images/email.png);
+    content: url(../public/images/email.png);
     width: 60px;
     height: 60px;
 }
 .contact-facebook a{
-    content: url(../CV-Styling/public/images/facebook.png);
+    content: url(../public/images/facebook.png);
     width: 60px;
     height: 60px;
 }
@@ -234,6 +235,10 @@ height: 60px;
     }
     .skills-primary{
         margin-top: 20px;
+    }
+    .contacts{
+      display: flex;
+      flex-wrap: wrap;
     }
     }
 

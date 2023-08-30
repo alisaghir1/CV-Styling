@@ -226,6 +226,12 @@ header hgroup{
         display: flex;
         flex-direction: column;
     }
+    header div{
+        margin: 0px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
     hgroup{
         color: red;
         flex-direction: column;
