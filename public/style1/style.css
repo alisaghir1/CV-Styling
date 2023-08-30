@@ -18,6 +18,8 @@ header hgroup{
 }
 header img{
     margin-left: 100xpx;
+    width: 110px;
+    height: 110px;
 }
 #contact{
   display: flex;
